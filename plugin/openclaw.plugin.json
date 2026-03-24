@@ -1,0 +1,15 @@
+{
+  "id": "beddel",
+  "name": "Beddel Workflow Runner",
+  "description": "Execute declarative YAML AI workflows with branching, retry, multi-provider LLM support, guardrails, and OpenTelemetry tracing via the Beddel Python SDK.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "defaultTimeoutMs": { "type": "number", "default": 120000 },
+      "maxStdoutBytes": { "type": "number", "default": 1048576 },
+      "beddelPath": { "type": "string", "description": "Custom path to beddel executable" },
+      "jsonOutput": { "type": "boolean", "default": true }
+    }
+  }
+}
